@@ -1,0 +1,541 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "management",
+        "importPath": "django.core",
+        "description": "django.core",
+        "isExtraImport": true,
+        "detail": "django.core",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "ListAPIView",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "RetrieveAPIView",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": "backend.env.Scripts.activate_this",
+        "description": "backend.env.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)",
+        "detail": "backend.env.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": "backend.env.Scripts.activate_this",
+        "description": "backend.env.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]",
+        "detail": "backend.env.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": "backend.env.Scripts.activate_this",
+        "description": "backend.env.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "backend.env.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": "backend.env.Scripts.activate_this",
+        "description": "backend.env.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "backend.env.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": "backend.env.Scripts.activate_this",
+        "description": "backend.env.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "backend.env.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": "backend.env.Scripts.activate_this",
+        "description": "backend.env.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "backend.env.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": "backend.env.Scripts.activate_this",
+        "description": "backend.env.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "backend.env.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": "backend.env.Scripts.activate_this",
+        "description": "backend.env.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": "backend.env.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.src.articles.migrations.0001_initial",
+        "description": "backend.src.articles.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Article',\n            fields=[\n                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.TextField(max_length=50)),",
+        "detail": "backend.src.articles.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "backend.src.articles.migrations.0002_auto_20201220_1238",
+        "description": "backend.src.articles.migrations.0002_auto_20201220_1238",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('articles', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='article',\n            name='title',\n            field=models.CharField(max_length=50),\n        ),",
+        "detail": "backend.src.articles.migrations.0002_auto_20201220_1238",
+        "documentation": {}
+    },
+    {
+        "label": "ArticlesConfig",
+        "kind": 6,
+        "importPath": "backend.src.articles.apps",
+        "description": "backend.src.articles.apps",
+        "peekOfCode": "class ArticlesConfig(AppConfig):\n    name = 'articles'",
+        "detail": "backend.src.articles.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Article",
+        "kind": 6,
+        "importPath": "backend.src.articles.models",
+        "description": "backend.src.articles.models",
+        "peekOfCode": "class Article(models.Model):\n    title = models.CharField(blank=False, max_length=50, null=False)\n    content = models.TextField(max_length=100)\n    def __str__(self):\n        return \"{:s}\".format(self.title)",
+        "detail": "backend.src.articles.models",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleSerializer",
+        "kind": 6,
+        "importPath": "backend.src.articles.serializers",
+        "description": "backend.src.articles.serializers",
+        "peekOfCode": "class ArticleSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Article\n        fields = ('id', 'title', 'content')",
+        "detail": "backend.src.articles.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "backend.src.articles.urls",
+        "description": "backend.src.articles.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"\", ArtileListView.as_view()),\n    path(\"<pk>\", ArticleDetailView.as_view())\n]",
+        "detail": "backend.src.articles.urls",
+        "documentation": {}
+    },
+    {
+        "label": "ArtileListView",
+        "kind": 6,
+        "importPath": "backend.src.articles.views",
+        "description": "backend.src.articles.views",
+        "peekOfCode": "class ArtileListView(ListAPIView):\n    queryset = Article.objects.all()\n    serializer_class = ArticleSerializer\nclass ArticleDetailView(RetrieveAPIView):\n    queryset = Article.objects.all()\n    serializer_class = ArticleSerializer",
+        "detail": "backend.src.articles.views",
+        "documentation": {}
+    },
+    {
+        "label": "ArticleDetailView",
+        "kind": 6,
+        "importPath": "backend.src.articles.views",
+        "description": "backend.src.articles.views",
+        "peekOfCode": "class ArticleDetailView(RetrieveAPIView):\n    queryset = Article.objects.all()\n    serializer_class = ArticleSerializer",
+        "detail": "backend.src.articles.views",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = '!58uwoi2ob_-8fox9c-x%4!evaq$0$$6mp0fu$+8)xvvlx(0m@'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "SECRET_KEY = '!58uwoi2ob_-8fox9c-x%4!evaq$0$$6mp0fu$+8)xvvlx(0m@'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'articles.apps.ArticlesConfig',",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'articles.apps.ArticlesConfig',\n    'rest_framework',\n    'corsheaders',",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n    'corsheaders.middleware.CorsMiddleware',\n]",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    # Use Django's standard `django.contrib.auth` permissions,\n    # or allow read-only access for unauthenticated users.\n    'DEFAULT_PERMISSION_CLASSES': [\n        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'\n    ]\n}\nROOT_URLCONF = 'djangoReact.urls'\nTEMPLATES = [\n    {",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "ROOT_URLCONF = 'djangoReact.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'djangoReact.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/2.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),\n    }\n}\n# Password validation",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.2/howto/static-files/\nSTATIC_URL = '/static/'\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOWED_ORIGINS = [",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.2/howto/static-files/\nSTATIC_URL = '/static/'\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOWED_ORIGINS = [\n    \"https://example.com\",",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.2/howto/static-files/\nSTATIC_URL = '/static/'\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOWED_ORIGINS = [\n    \"https://example.com\",\n    \"https://sub.example.com\",",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_L10N",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.2/howto/static-files/\nSTATIC_URL = '/static/'\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOWED_ORIGINS = [\n    \"https://example.com\",\n    \"https://sub.example.com\",\n    \"http://localhost:8080\",",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.2/howto/static-files/\nSTATIC_URL = '/static/'\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOWED_ORIGINS = [\n    \"https://example.com\",\n    \"https://sub.example.com\",\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:9000\",",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "STATIC_URL = '/static/'\nCORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOWED_ORIGINS = [\n    \"https://example.com\",\n    \"https://sub.example.com\",\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:9000\",\n]\nCORS_ALLOWED_ORIGIN_REGEXES = [\n    r\"^https://\\w+\\.example\\.com$\",",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ORIGIN_ALLOW_ALL",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "CORS_ORIGIN_ALLOW_ALL = True\nCORS_ALLOWED_ORIGINS = [\n    \"https://example.com\",\n    \"https://sub.example.com\",\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:9000\",\n]\nCORS_ALLOWED_ORIGIN_REGEXES = [\n    r\"^https://\\w+\\.example\\.com$\",\n]",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOWED_ORIGINS",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    \"https://example.com\",\n    \"https://sub.example.com\",\n    \"http://localhost:8080\",\n    \"http://127.0.0.1:9000\",\n]\nCORS_ALLOWED_ORIGIN_REGEXES = [\n    r\"^https://\\w+\\.example\\.com$\",\n]",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOWED_ORIGIN_REGEXES",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.settings",
+        "description": "backend.src.djangoReact.settings",
+        "peekOfCode": "CORS_ALLOWED_ORIGIN_REGEXES = [\n    r\"^https://\\w+\\.example\\.com$\",\n]",
+        "detail": "backend.src.djangoReact.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.urls",
+        "description": "backend.src.djangoReact.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api-auth/', include('rest_framework.urls')),\n    path(\"api/\", include(\"articles.urls\"))\n]",
+        "detail": "backend.src.djangoReact.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "backend.src.djangoReact.wsgi",
+        "description": "backend.src.djangoReact.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "backend.src.djangoReact.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "backend.src.manage",
+        "description": "backend.src.manage",
+        "peekOfCode": "def main():\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djangoReact.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"\n        ) from exc",
+        "detail": "backend.src.manage",
+        "documentation": {}
+    }
+]
