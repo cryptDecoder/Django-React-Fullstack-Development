@@ -2,8 +2,8 @@ astroid==2.0.4
 certifi==2018.8.24
 chardet==3.0.4
 defusedxml==0.5.0
-Django==2.2.13
-django-allauth==0.37.1
+Django==3.2.15
+django-allauth==0.41.0
 django-cors-headers==2.4.0
 django-rest-auth==0.9.3
 djangorestframework==3.9.1
@@ -19,8 +19,8 @@ pytz==2018.5
 requests==2.21.0
 requests-oauthlib==1.0.0
 six==1.11.0
-sqlparse==0.3.0
+sqlparse==0.4.2
 typed-ast==1.1.0
-urllib3==1.24.2
+urllib3==1.26.5
 whitenoise==3.3.1
 wrapt==1.10.11
